@@ -1,0 +1,440 @@
+@charset "utf-8";
+
+/* ここから下に記載していく */
+html {
+  font-size: 62.5%; /* 16px x 62.5% = 10px/[rem]*/
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #333333;
+  font-family: 'noto sans JP', 'Open Sans', 'ヒラギノ角ゴ ProN W3', Hiragino Kaku Gothic ProN,
+    'メイリオ', Meiryo, sans-serif;
+  font-size: 1.6rem; /*bodyが16pxに設定された*/
+}
+
+
+.li {
+  list-style: none;
+  float: left;
+  padding: 30px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  color: #222222;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #222222;
+}
+
+/*共通*/
+.title_en {
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin: 0 0 30px;
+  color: #ffd61a;
+}
+
+.title_ja {
+  font-size: 1.8rem;
+  margin: 0 0 60px;
+  color: #222222;
+}
+
+.pagetop {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+}
+
+.pagetop p {
+  margin: 0 0 10px;
+}
+
+.pagetop-arrow {
+  height: 50px;
+  width: 50px;
+  border-top: 5px solid #ffd61a;
+  border-right: 5px solid #ffd61a;
+  background-color: #fff;
+
+  transform: translateY(20%) rotate(-45deg);
+}
+
+/*header*/
+.header {
+  width: 1200px;
+  margin: auto;
+  height: 121px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header_img {
+  align-items: center;
+  margin-left: 50px;
+  width: 300px;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+
+  font-size: 2.1rem;
+}
+
+.nav-list > li {
+  margin: 0 0 0 10px;
+  padding: 10px 10px;
+  width: 150px;
+  height: 121px;
+
+  /*テキストを真ん中に配置*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: url(../img/cheese.png) no-repeat;
+  background-size: 190px 50px;
+  background-position: 50%;
+
+  transition: background 1.5s ease-out;
+}
+
+.nav-list > li:hover {
+  background: url(../img/cheese-melt.png) no-repeat;
+  background-size: 190px;
+  background-position: -30%;
+}
+
+.nav-contents {
+  /* background-color: #ffd61a; */
+  /* border-top: solid 6px #ffa500; */
+  /* box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32); */
+}
+
+.nav-contents a {
+  font-family: 'Fasthand';
+  font-size: 3rem;
+}
+
+/*hero-image*/
+.hero {
+  width: 1200px;
+  margin: auto;
+}
+
+.hero-image {
+  position: relative;
+}
+
+.hero_text {
+  width: 1000px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  letter-spacing: 0.4em;
+  color: #fff;
+  text-align: center;
+}
+
+.hero_text > h1 {
+  font-size: 3.6rem;
+  font-weight: bold;
+  margin: 0 0 30px;
+}
+
+.hero_text > p {
+  font-size: 2.4rem;
+}
+/*about*/
+.about-wrapper {
+  width: 1200px;
+  margin: auto;
+  padding: 60px 0;
+}
+
+.profile-wrapper {
+  margin: 0 0 80px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.about__contents {
+  font-size: 1.6rem;
+  text-align: center;
+  margin: 0 0 40px;
+  line-height: 2;
+}
+
+.about__contents2 {
+  font-size: 1.6rem;
+  text-align: center;
+  /* margin: 0 0 40px; */
+  line-height: 2;
+}
+
+.about_image{
+  width: 1200px;
+  margin: auto;
+}
+
+.about_image_list{
+  display: flex;
+
+  margin: 0 0 60px 0;
+
+  /* justify-content: space-between; */
+  /* align-items: center; 交差軸 */
+}
+
+/*course*/
+
+.course {
+  margin: 0 0 60px;
+}
+
+.course-wrapper {
+  width: 1200px;
+  margin: auto;
+}
+
+.course__title {
+  font-size: 2.4rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 0 30px;
+  color: #111111;
+}
+
+.course__subtitle {
+  text-align: center;
+  line-height: 2;
+  margin: 0 0 60px;
+}
+
+.course-main {
+  background-color: #fafafa;
+}
+
+.course__contents {
+  display: flex;
+  justify-content: flex-end;
+
+  align-items: center;
+}
+
+.course__contents img {
+  width: 50%;
+}
+
+.course__list {
+  width: 50%;
+  align-items: center;
+}
+
+.course__list.jicchi {
+  margin-left: 50px;
+}
+
+.course__list.chishiki {
+  margin-left: auto;
+  transform: translate3d(100px,0 ,0);
+
+}
+
+
+
+.course__list.tasting {
+  margin-left: 50px;
+}
+
+.course__contents_title {
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin: 0 0 40px;
+}
+
+.course__contents__p {
+  width: 480px;
+  line-height: 2;
+}
+
+/* news */
+
+.news {
+  margin: 0 0 60px;
+}
+
+.news-wrapper {
+  width: 960px;
+  margin: auto;
+}
+
+.instagram {
+  margin: 0 0 30px;
+}
+
+.news-all {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 60px;
+}
+
+.news-all li {
+  width: 300px;
+}
+
+.news-list:hover {
+  box-shadow: -10px 5px #ffd61a;
+}
+
+.news-list-img {
+  margin: 0 0 30px;
+}
+
+.news-list > p {
+  margin: 0 0 24px;
+}
+
+.news-btn {
+  text-align: center;
+
+  display: block;
+  font-size: 1.8rem;
+  /* background-color: #ffd61a;
+  color: #fff; */
+  width: 250px;
+  height: 150px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  background: url(../img/news-more.png) no-repeat;
+  background-size: 250px;
+  transition: background 1.5s;
+}
+
+.news-btn:hover {
+  background: url(../img/news-more-melt.png) no-repeat;
+  background-size: 250px;
+}
+
+.news-btn-txt {
+  padding: 0 0 70px 0;
+}
+
+/* access */
+.black {
+  color: #111111;
+}
+
+.access {
+  margin: 0 0 60px;
+}
+
+.access-wrapper {
+  width: 1200px;
+  margin: auto;
+  background-color: #fafafa;
+  padding: 60px 0 60px 0;
+}
+
+.access-map {
+  text-align: center;
+  margin: 0 0 60px;
+}
+
+.access-text {
+  display: flex;
+  flex-wrap: wrap;
+  width: 580px;
+  margin: auto;
+  line-height: 2;
+}
+
+.access-title {
+  width: 180px;
+}
+
+.access-item {
+  width: 400px;
+}
+
+/*contact*/
+.contact-wrapper {
+  width: 500px;
+  margin: auto;
+}
+
+.contact-message {
+  margin: 0 0 40px;
+}
+
+.contact-text {
+  text-align: center;
+  margin: 0 0 30px;
+  line-height: 2;
+}
+
+/*form*/
+.form-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 700px;
+  margin: auto;
+}
+
+.form-title {
+  width: 240px;
+  text-align: center;
+  
+}
+
+.form-item {
+  width: 400px;
+  padding: 20px 0
+}
+
+.form-item input{
+  height: 36px;
+}
+
+.form-parts {
+  padding: 8px;
+  font-size: 1.6rem;
+  border: solid 1px #c9c9c9;
+  /* width: 388px; */
+  width: 100%;
+  box-sizing: border-box; /*?*/
+}
+
+.checkbox-item {
+  margin: 0 0 24px;
+}
+
+.form-wrapper dt {
+  background-color: #bfbfbf;
+  padding: 8px 0;
+  margin: 2px;
+}
+
+.form_textarea input{
+  height: 100px;
+}
